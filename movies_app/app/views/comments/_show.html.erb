@@ -1,0 +1,11 @@
+<div style="margin-top: 30px;" class="row comment">
+	<div class="col-md-10 col-md-offset-2 well">
+		<h3>
+			<% if comment.author.trusted_reviewer %>
+				<span class="glyphicon glyphicon-star">
+			<% end %>
+			<%= comment.author.username %>
+		</h3>
+		<p><%= comment.body %></p>
+	</div>
+</div>
